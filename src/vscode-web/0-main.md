@@ -2,14 +2,16 @@
 theme: slidev-theme-russell
 addons:
   - slidev-addons-russell
-title: VS Code Web
+title: Informatica 2c
 author: Marini Mattia
 info: |
   Marini Mattia - a.s. 2026/2027
+
 drawings:
   persist: false
 comark: true
-src: ./steps.md
+presenter: dev
+src: ./1-regole.md
 ---
 
 # Installare le estensioni
