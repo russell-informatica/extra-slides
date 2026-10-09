@@ -11,7 +11,6 @@ drawings:
   persist: false
 comark: true
 presenter: dev
-src: ./1-regole.md
 ---
 
 # Installare le estensioni
@@ -23,7 +22,7 @@ Si apre il *Marketplace*: da qui installeremo gli strumenti che ci servono per p
 
 ---
 layout: image-right
-image: ./assets/01.png
+image: /vscode-web/01.png
 ---
 
 # Cercare "Pylance"
@@ -38,13 +37,13 @@ Nel campo di ricerca del Marketplace digita **pylance**.
 
 Pylance, nella versione web, ha funzionalità limitate: l'analisi è ristretta ai file aperti.
 
-<img src="./assets/02.png" class="shot" alt="Avviso: Pylance presenta funzionalità limitate, con il pulsante Installa comunque" />
+<img src="/vscode-web/02.png" class="shot" alt="Avviso: Pylance presenta funzionalità limitate, con il pulsante Installa comunque" />
 
 Clicca **Installa comunque** per proseguire.
 
 ---
 layout: image-right
-image: ./assets/03.png
+image: /vscode-web/03.png
 ---
 
 # Cercare "Pyodide Runner"
@@ -59,13 +58,13 @@ Questa estensione permette di eseguire Python direttamente nel browser, senza in
 
 Pyodide Runner è pubblicata da un autore non verificato: VS Code mostra un avviso di sicurezza.
 
-<img src="./assets/04.png" class="shot max-h-48" alt="Avviso: considerare attendibile il server di pubblicazione tym-inc" />
+<img src="/vscode-web/04.png" class="shot max-h-48" alt="Avviso: considerare attendibile il server di pubblicazione tym-inc" />
 
 Clicca **Considera attendibile il server di pubblicazione e l'installazione** per autorizzare l'estensione.
 
 ---
 layout: image-right
-image: ./assets/05.png
+image: /vscode-web/05.png
 topic: VS Code Web · Workspace
 ---
 
@@ -77,7 +76,7 @@ Clicca l'icona dell'**Explorer** (le pagine) nella barra laterale a sinistra.
 
 ---
 layout: image-right
-image: ./assets/06.png
+image: /vscode-web/06.png
 ---
 
 # Apri cartella
@@ -92,7 +91,7 @@ Scegli una cartella sul tuo computer: il browser chiederà il permesso di accede
 
 Aprendo una cartella locale, il browser chiede il permesso di leggere i file.
 
-<img src="./assets/07.png" class="shot" alt="Richiesta del browser: Allow this site to view and copy files?" />
+<img src="/vscode-web/07.png" class="shot" alt="Richiesta del browser: Allow this site to view and copy files?" />
 
 Clicca **Allow** per permettere a vscode.dev di visualizzare e copiare i file della cartella.
 
@@ -102,7 +101,7 @@ Clicca **Allow** per permettere a vscode.dev di visualizzare e copiare i file de
 
 Subito dopo, VS Code chiede se si considerano attendibili gli autori dei file nella cartella.
 
-<img src="./assets/08.png" class="shot" alt="Richiesta: si considerano attendibili gli autori dei file in questa cartella?" />
+<img src="/vscode-web/08.png" class="shot" alt="Richiesta: si considerano attendibili gli autori dei file in questa cartella?" />
 
 Clicca **Sì**: l'autore dei file siete voi!
 
@@ -112,7 +111,7 @@ Clicca **Sì**: l'autore dei file siete voi!
 
 Con il **tasto destro** sulla cartella scegli **Nuovo file** e chiamalo, ad esempio, `primo.py`.
 
-<img src="./assets/09.png" class="shot" alt="Richiesta del browser: consentire l'accesso agli appunti" />
+<img src="/vscode-web/09.png" class="shot" alt="Richiesta del browser: consentire l'accesso agli appunti" />
 
 Se compare la richiesta di accesso agli appunti, clicca **Allow**.
 
@@ -122,7 +121,7 @@ Se compare la richiesta di accesso agli appunti, clicca **Allow**.
 
 Per salvare davvero i file nella cartella locale, il browser deve essere autorizzato a scrivere.
 
-<img src="./assets/10.png" class="shot" alt="Richiesta del browser: Save changes to tmp?" />
+<img src="/vscode-web/10.png" class="shot" alt="Richiesta del browser: Save changes to tmp?" />
 
 Clicca **Save changes**: così vscode.dev potrà scrivere sulla vostra cartella.
 
@@ -136,6 +135,6 @@ topic: false
 
 Scrivi `print("Hello world")` nel file e premi il bottone **▶ Run** in alto a destra.
 
-<img src="./assets/11.png" class="shot max-h-72" alt="Editor con print(&quot;Hello world&quot;), bottone Run e output Hello world nella console" />
+<img src="/vscode-web/11.png" class="shot max-h-72" alt="Editor con print(&quot;Hello world&quot;), bottone Run e output Hello world nella console" />
 
 L'output `Hello world` comparirà nella console in basso.
