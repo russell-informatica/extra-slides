@@ -6,9 +6,9 @@
       "name": "prime",
       "dependencies": {
         "@slidev/cli": "^53.0.0",
-        "slidev-addons-russell": "git+https://github.com/russell-informatica/slidev-addons.git",
-        "slidev-theme-russell": "git+https://github.com/russell-informatica/slidev-theme.git",
-        "vue": "^3.5.43",
+        "@slidev/theme-default": "latest",
+        "@slidev/theme-seriph": "latest",
+        "vue": "^3.5.33",
       },
     },
   },
@@ -100,10 +100,6 @@
     "@floating-ui/dom": ["@floating-ui/dom@1.8.0", "", { "dependencies": { "@floating-ui/core": "^1.8.0", "@floating-ui/utils": "^0.2.12" } }, "sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg=="],
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.12", "", {}, "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww=="],
-
-    "@fontsource/fira-code": ["@fontsource/fira-code@5.3.0", "", {}, "sha512-EJL968RJRkakubAj/coU8pSUaeTE5UNoRjtzAr6kGiSZ3jWuN8/AKWHwym/PFUaQL1q7IL/H+EXs4358YhrTBQ=="],
-
-    "@fontsource/ia-writer-quattro": ["@fontsource/ia-writer-quattro@5.3.0", "", {}, "sha512-J249e+/1kBy9YzJ1JKRPDm0V3ELGwqSlxf3WlB7qNiExLA+kXGN+VwOhILNH21ZcezFVilvA9+ev2r/kZSyy/g=="],
 
     "@hono/node-server": ["@hono/node-server@1.19.17", "", { "peerDependencies": { "hono": "^4" } }, "sha512-dSneS5qhiauZWGDCeK4o695Xd9nUNjviSZCMQrj10eetr8Uln1ucn6bbphOM6UynAMMtNIzZNSpL9vnASJwrPQ=="],
 
@@ -270,6 +266,10 @@
     "@slidev/parser": ["@slidev/parser@53.0.0", "", { "dependencies": { "@antfu/utils": "^9.3.0", "@slidev/types": "53.0.0", "pathe": "^2.0.3", "yaml": "^2.9.1" } }, "sha512-0wwoyPimeLUV0+BUCxJXq4GqBkufeSioPNTN6JGIByAEtm0efNNpSwQ6Pdy8UroCINuALDt+sttBFqo+MtDaFw=="],
 
     "@slidev/rough-notation": ["@slidev/rough-notation@0.1.0", "", { "dependencies": { "roughjs": "^4.6.6" } }, "sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA=="],
+
+    "@slidev/theme-default": ["@slidev/theme-default@0.25.0", "", { "dependencies": { "@slidev/types": "^0.47.0", "codemirror-theme-vars": "^0.1.2", "prism-theme-vars": "^0.2.4" } }, "sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw=="],
+
+    "@slidev/theme-seriph": ["@slidev/theme-seriph@0.25.0", "", { "dependencies": { "@slidev/types": "^0.47.0", "codemirror-theme-vars": "^0.1.2", "prism-theme-vars": "^0.2.4" } }, "sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ=="],
 
     "@slidev/types": ["@slidev/types@53.0.0", "", { "dependencies": { "@antfu/utils": "^9.3.0", "@shikijs/markdown-it": "^4.4.3", "@vitejs/plugin-vue": "^6.0.9", "@vitejs/plugin-vue-jsx": "^5.1.6", "katex": "^0.18.7", "mermaid": "^12.0.0", "monaco-editor": "^0.56.0", "shiki": "^4.4.3", "unocss": "^66.10.4", "unplugin-icons": "^24.0.0", "unplugin-vue-markdown": "^32.1.1", "vite-plugin-inspect": "^12.0.2", "vite-plugin-remote-assets": "^2.1.0", "vite-plugin-static-copy": "^4.1.1", "vite-plugin-vue-server-ref": "^1.0.0", "vue": "^3.5.42", "vue-router": "^5.3.1" } }, "sha512-Iyr37tIJAC65lTLgFim+5c5iqNAaj7NfkcFUzu8yqxY9SAeuFyk7rB8MBc/VC4JVpPVaahVO+35EX+wPY6BAeg=="],
 
@@ -532,6 +532,8 @@
     "cliui": ["cliui@9.0.1", "", { "dependencies": { "string-width": "^7.2.0", "strip-ansi": "^7.1.0", "wrap-ansi": "^9.0.0" } }, "sha512-k7ndgKhwoQveBL+/1tqGJYNz097I7WOvwbmmU2AR5+magtbjPWQTS1C5vzGkBC8Ym8UWRzfKUzUUqFLypY4Q+w=="],
 
     "clone-regexp": ["clone-regexp@3.0.0", "", { "dependencies": { "is-regexp": "^3.0.0" } }, "sha512-ujdnoq2Kxb8s3ItNBtnYeXdm07FcU0u8ARAT1lQ2YdMwQC+cdiXX8KoqMVuglztILivceTtp4ivqGSmEmhBUJw=="],
+
+    "codemirror-theme-vars": ["codemirror-theme-vars@0.1.2", "", {}, "sha512-WTau8X2q58b0SOAY9DO+iQVw8JKVEgyQIqArp2D732tcc+pobbMta3bnVMdQdmgwuvNrOFFr6HoxPRoQOgooFA=="],
 
     "colorette": ["colorette@2.0.20", "", {}, "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w=="],
 
@@ -1071,6 +1073,8 @@
 
     "pptxgenjs": ["pptxgenjs@4.0.1", "", { "dependencies": { "@types/node": "^22.8.1", "https": "^1.0.0", "image-size": "^1.2.1", "jszip": "^3.10.1" } }, "sha512-TeJISr8wouAuXw4C1F/mC33xbZs/FuEG6nH9FG1Zj+nuPcGMP5YRHl6X+j3HSUnS1f3at6k75ZZXPMZlA5Lj9A=="],
 
+    "prism-theme-vars": ["prism-theme-vars@0.2.5", "", {}, "sha512-/D8gBTScYzi9afwE6v3TC1U/1YFZ6k+ly17mtVRdLpGy7E79YjJJWkXFgUDHJ2gDksV/ZnXF7ydJ4TvoDm2z/Q=="],
+
     "process-nextick-args": ["process-nextick-args@2.0.1", "", {}, "sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag=="],
 
     "prompts": ["prompts@2.4.2", "", { "dependencies": { "kleur": "^3.0.3", "sisteransi": "^1.0.5" } }, "sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q=="],
@@ -1140,10 +1144,6 @@
     "sirv": ["sirv@3.0.2", "", { "dependencies": { "@polka/url": "^1.0.0-next.24", "mrmime": "^2.0.0", "totalist": "^3.0.0" } }, "sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g=="],
 
     "sisteransi": ["sisteransi@1.0.5", "", {}, "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="],
-
-    "slidev-addons-russell": ["slidev-addons-russell@github:russell-informatica/slidev-addons#abf44e8", {}, "russell-informatica-slidev-addons-abf44e8", "sha512-tM8IHyDqkWkprQnSQbM2EAzR8S0aIbFkQtAQFNpzoVbo9vgtACUGlDhep7tOtpbKZ+RqHHh4ch0vNaKMcej/dg=="],
-
-    "slidev-theme-russell": ["slidev-theme-russell@github:russell-informatica/slidev-theme#4506c89", { "dependencies": { "@fontsource/fira-code": "^5.3.0", "@fontsource/ia-writer-quattro": "^5.3.0" } }, "russell-informatica-slidev-theme-4506c89", "sha512-cmJKRHdpPV9CLmhwkDoJ0umrkEKoXvur5CTYP5qMUu8VtBPYqgWReNPwuQEbJbW8q4Xj8E4w98hyfPwWffhj+Q=="],
 
     "source-map-js": ["source-map-js@1.2.2", "", {}, "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="],
 
@@ -1310,6 +1310,10 @@
     "@shikijs/markdown-it/markdown-it": ["markdown-it@15.0.2", "", { "dependencies": { "argparse": "^3.0.0", "entities": "^8.0.0", "linkify-it": "^6.0.0", "mdurl": "^2.1.0", "punycode.js": "^2.3.1", "uc.micro": "^3.0.0" }, "bin": { "markdown-it": "bin/markdown-it.mjs" } }, "sha512-q4IGxMv56jCqT4OCRCADBoDP3LO4MhmTXjFbphHPXs4g3j9Xg5RDnxqN8IF/3vIWEU+VCnUq+7JUg/cfy2E6Qw=="],
 
     "@shikijs/vitepress-twoslash/markdown-it": ["markdown-it@15.0.2", "", { "dependencies": { "argparse": "^3.0.0", "entities": "^8.0.0", "linkify-it": "^6.0.0", "mdurl": "^2.1.0", "punycode.js": "^2.3.1", "uc.micro": "^3.0.0" }, "bin": { "markdown-it": "bin/markdown-it.mjs" } }, "sha512-q4IGxMv56jCqT4OCRCADBoDP3LO4MhmTXjFbphHPXs4g3j9Xg5RDnxqN8IF/3vIWEU+VCnUq+7JUg/cfy2E6Qw=="],
+
+    "@slidev/theme-default/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
+
+    "@slidev/theme-seriph/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
     "@typescript/vfs/debug": ["debug@4.4.3", "", { "dependencies": { "ms": "^2.1.3" }, "peerDependencies": { "supports-color": "*" }, "optionalPeers": ["supports-color"] }, "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA=="],
 
