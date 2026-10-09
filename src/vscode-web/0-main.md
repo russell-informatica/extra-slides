@@ -12,6 +12,30 @@ drawings:
 comark: true
 presenter: dev
 ---
+# Uso vscode-web
+### Come installare e configurare vscode-web per poter far girare python direttamente dal vostro browser
+
+<div class="pt-12">
+  <span class="px-2 py-1 rounded bg-primary text-[#141418]">Informatica - Liceo Russell</span>
+</div>
+
+---
+layout: center
+---
+# Aprire **google chrome** e andare sul sito
+
+<div  class="text-center my-15">
+  <span class="text-5xl px-2 py-1 rounded bg-primary text-[#141418]">vscode.dev</span>
+</div>
+
+> E' tassativo usare **google chrome**, altri browser potrebbero non funzionare!
+
+
+
+---
+layout: image-right
+image: /vscode-web/01.png
+---
 
 # Installare le estensioni
 
