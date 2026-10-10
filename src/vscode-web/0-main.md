@@ -2,7 +2,7 @@
 theme: slidev-theme-russell
 addons:
   - slidev-addons-russell
-title: Informatica 2c
+title: Vscode-web
 author: Marini Mattia
 info: |
   Marini Mattia - a.s. 2026/2027
@@ -16,7 +16,7 @@ presenter: dev
 ### Come installare e configurare vscode-web per poter far girare python direttamente dal vostro browser
 
 <div class="pt-12">
-  <span class="px-2 py-1 rounded bg-primary text-[#141418]">Informatica - Liceo Russell</span>
+  <span class="px-2 py-1 rounded bg-primary text-[#141418]">Marini Mattia - Informatica</span>
 </div>
 
 ---
